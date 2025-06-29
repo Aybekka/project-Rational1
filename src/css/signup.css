@@ -14,8 +14,6 @@
   background-color: #111;
   padding: 30px 25px;
   border-radius: 10px;
-  float: none; /* float kaldırıldı */
-  box-sizing: border-box;
 }
 
 p.description {
@@ -89,7 +87,7 @@ button:hover {
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .images {
     display: flex;
     gap: 20px;
