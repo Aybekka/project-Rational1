@@ -1,0 +1,89 @@
+.signup {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #111;
+  padding: 30px 25px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .signup {
+    max-width: 480px;
+    
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    width: 1080px;
+  }
+  .signup {
+    max-width: 480px;
+    
+  }
+}
+
+p.description {
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #eee;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.privacy-text a {
+  color: #bbb;
+  text-decoration: underline;
+}
