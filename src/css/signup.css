@@ -11,7 +11,7 @@
 
 .signup {
   max-width: 480px;
-  background-color: #111;
+  background-color: var(--black);
   padding: 30px 25px;
   border-radius: 10px;
 }
@@ -29,13 +29,13 @@ form {
 input[type='text'],
 input[type='email'],
 textarea {
-  background-color: #222;
+  background-color: var(--black);
   border: 1px solid #444;
   border-radius: 10px;
   padding: 12px 15px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #eee;
+  color: var(--white);
   resize: vertical;
 }
 
@@ -50,8 +50,8 @@ textarea {
 
 button {
   margin-top: 20px;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
   font-weight: 700;
   border: none;
   border-radius: 10px;
@@ -62,7 +62,8 @@ button {
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: var(--dark-grey);
+  color: var(--brown);
 }
 
 .privacy-text {
@@ -101,8 +102,7 @@ button:hover {
     border-radius: 1000px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    top: 0; /* top kaldırıldı */
+    top: 0; 
   }
 
   .img2-oval {
@@ -112,7 +112,6 @@ button:hover {
     border-radius: 1000px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     top: 0;
   }
 
