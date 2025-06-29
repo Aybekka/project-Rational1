@@ -1,0 +1,21 @@
+/* ==========================================================================
+   AKAN YAZI ŞERİDİ (BLOCK) BİLEŞENİ
+   Not: Bu dosya, header.css içindeki genel stillere bağımlıdır.
+   ========================================================================== */
+.scrolling-block { width: 100%; overflow: hidden; padding: 30px 0; margin-top: 20px; border-top: 1px solid var(--line-color); border-bottom: 1px solid var(--line-color); background-color: black; }
+.scrolling-block__content { display: flex; white-space: nowrap; animation: scroll 20s linear infinite; }
+.scrolling-block__content p { font-size: 55px; font-weight: 500; text-transform: uppercase; letter-spacing: -1px; color: var(--white); margin: 0; padding-right: 40px; }
+.scrolling-block__content span { color: var(--brown); }
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .scrolling-block__content p { font-size: 32px; }
+}
+
+@media (min-width: 768px) {
+    .scrolling-block { margin-top: 40px; }
+}
