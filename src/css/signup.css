@@ -1,31 +1,21 @@
-.signup {
-  max-width: 400px;
+.wrapper {
+  display: flex;
+  justify-content: space-between; /* signup en sola, images en sağa */
+  align-items: flex-start; /* üst hizalama */
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.signup {
+  max-width: 480px;
   background-color: #111;
   padding: 30px 25px;
   border-radius: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-  .signup {
-    max-width: 480px;
-    
-  }
-}
-
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    width: 1080px;
-  }
-  .signup {
-    max-width: 480px;
-    
-  }
+  float: none; /* float kaldırıldı */
+  box-sizing: border-box;
 }
 
 p.description {
@@ -86,4 +76,66 @@ button:hover {
 .privacy-text a {
   color: #bbb;
   text-decoration: underline;
+}
+.images {
+  display: none;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .images {
+    display: none;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .images {
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: flex-end;
+  }
+  .img1-oval {
+    width: 180px;
+    height: 288px;
+    background-color: var(--brown);
+    border-radius: 1000px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    top: 0; /* top kaldırıldı */
+  }
+
+  .img2-oval {
+    width: 340px;
+    height: 540px;
+    background-color: var(--dark-grey);
+    border-radius: 1000px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    top: 0;
+  }
+
+  .img1-oval img {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    max-width: 163px;
+    max-height: 154px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    border-radius: 12px;
+  }
+  .img2-oval img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 254px;
+    max-height: 313px;
+    border-radius: 12px;
+  }
 }
