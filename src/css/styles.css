@@ -1,21 +1,71 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
+:root {More actions
+    --black: #121212;
+    --dark-grey:#1d1d1d;
+    --white: #fff;
+    --brown: #bea69e;
+    --main-gradient: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+    --font-family: "DM Sans", sans-serif;
+}
+body{
+    background-color: var(--black);
+}
+h1{
+    font-family: var(--font-family);
+        font-weight: 500;
+@@ -53,27 +56,37 @@
+        letter-spacing: -0.02em;
+        color: var(--white);
+}
+.container{
+    width: 80%;
+    max-width: 320px;
+    margin: 0 auto;
+    max-width: 1240px;
+}
+@media (min-width:375px){
+.container {
+        width: 80%;
+        max-width: 375px;   
+    }
+}
+@media (min-width:768px){
 
-/* Sections style */
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./advertisement.css');
-@import url('./about.css');
-@import url('./courses.css');
-@import url('./mentors.css');   
-@import url('./signup.css');
-@import url('./reviews.css');    
-@import url('./footer.css'); 
+    h1 {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 106%;
+            letter-spacing: -0.04em;
+            color: var(--white);
+        }
+
+        h2 {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 59px;
+            line-height: 108%;
+            letter-spacing: -0.02em;
+            color: var(--white);
+        }
+
+        h3 {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 48px;
+
+            letter-spacing: -0.02em;
+            color: var(--white);
+        }
+    
+        .container {
+                width: 80%;
+                max-width: 768px;  
+        }
+        /* !!!! Navbar,hero, sign up ver footer kısmlarınmda bazı yerlerde daha küçük p'ler var dikkat edin */
+}
+@media (min-width:1280px){
+    .container {
+        width: 80%;
+        max-width: 1280px;
+    }
+}
