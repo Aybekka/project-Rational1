@@ -46,6 +46,9 @@
 
 @media (min-width:1280px) {
 
+    .about-us-section{
+        width: 1080px;
+    }
     .aboutus-image {
         width: 488px;
         height: 260px;
