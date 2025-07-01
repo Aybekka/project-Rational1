@@ -2,17 +2,12 @@
   display: flex;
   justify-content: space-between; /* signup en sola, images en sağa */
   align-items: flex-start; /* üst hizalama */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
   gap: 20px;
   box-sizing: border-box;
 }
 
 .signup {
-  max-width: 480px;
   background-color: var(--black);
-  padding: 30px 25px;
   border-radius: 10px;
 }
 
@@ -41,7 +36,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #999;
+  color: var(--white);
 }
 
 textarea {
@@ -85,11 +80,18 @@ button:hover {
   .images {
     display: none;
   }
+ .wrapper {
+    display: flex;           /* Flex sistemi aktif */
+    justify-content: center; /* YATAY ortalama */
+    align-items: center;     /* DİKEY ortalama */
+    height: 100vh;           /* Dikey ortalamak için gerekli */
+  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .images {
+    width: 540px;
     display: flex;
     gap: 20px;
     box-sizing: border-box;
@@ -134,5 +136,14 @@ button:hover {
     max-width: 254px;
     max-height: 313px;
     border-radius: 12px;
+  }
+  .signup {
+    max-width: 480px;
+    float: left;
+  }
+  .wrapper{
+    width: 1080px;
+    margin: 0 auto;
+    gap: 60px;
   }
 }
