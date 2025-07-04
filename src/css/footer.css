@@ -20,8 +20,14 @@
   transition: 200ms ease;
 } */
 
-.container {
-  background-image: url(../images/footer-bg.png);
+/* burada da .container olarak yazmıştınız ben değiştirdim çünkü .container
+classini inceleyip burayı düzeltin çakışan kodlar var ve kaymalar yaşandı*/
+.footer-container {
+  /*svg ler ve fotoğrafların yerleri de aynı şekilde baz kodun içinde farklı 
+  yerlerde sanırım images olarak geçiyordu onu da değiştim ama yine de 
+  istediğiniz yapıyı getiremedim bunun üstünde de biraz çalışılması lazım
+  !!!! ../ yapısı da github tarafından desteklenmiyor lütfen dikkat edelim !!!! */
+  background-image: url(./src/img/footer-bg.png);
   background-size: contain;
 
   background-color: var(--black);
@@ -51,7 +57,7 @@
 .logo {
   margin-bottom: 25px;
 }
-
+/* direkt address p yi değiştirdiğiniz zaman başka bir yerde address kullanılırsa bu sorunlara yol açabilir bunu spesifikleştirelim lütfen */
 address p {
   margin-top: 10px;
   margin-bottom: 133px;
@@ -104,8 +110,11 @@ input::placeholder {
 }
 
 .subscription-button {
-  background-color: var(--darkgrey);
-  border: 1px solid var(--darkgrey);
+  /* var kullanırken de aynı şekilde mainin içindeki base.css de 
+  :root{} içeriğini kontrol edip kullanın lütfen 
+  bu arada buttonun içinde bir kayma söz konusu */
+  background-color: var(--dark-grey);
+  border: 1px solid var(--dark-grey);
   color: var(--white);
   font-size: 20px;
   line-height: 1.2;
@@ -134,9 +143,13 @@ input::placeholder {
   text-align: left;
 }
 
+/* Sadece desktop görüntüsü düzgün çalışıyor buraların revize edilmesi lazım
+aynı şekilde fontları da çekmemişsiniz gerekli yerlerde gerekli tagleri kullanırsanız
+hepsi tanımlı */
+
 @media (min-resolution: 2x) {
   .body {
-    background-image: url(../images/footer-bg@x2.png);
+    background-image: url(./src/img/footer-bg@x2.png);
   }
 }
 
