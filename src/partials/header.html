@@ -1,5 +1,46 @@
-<header class="header">
-  <div class="container">
-   <!--KOD BU KISIMA EKLENECEK-->
-  </div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-Nav" viewBox="0 0 46 32">
+    <path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M9.671 5.074h40.329"></path>
+    <path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M8.671 24.468h40.329"></path>
+    <path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M19.602 14.771h30.398"></path>
+  </symbol>
+  </svg>
+<header class="container wrap">
+    <div class="header">
+        <nav class="nav">
+            <a class="logo" href="#">
+                <img src="./img/Focus.Frame.png" alt="Focus.Frame Logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our courses</a></li>
+                <li><a href="#">Our mentors</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="#" class="camera-icon-link">
+                    <svg class="icon icon-camera"><use xlink:href="./img/symbol-defs.svg#icon-camera"></use></svg>
+                </a>
+                <a class="hamburger-menu" href="#off-canvas-menu">
+                 <svg class="icon icon-Nav"><use xlink:href="#icon-Nav"></use></svg>
+                </a>
+                <button type="button" class="main-button">SIGN UP</button>
+            </div>
+        </nav>  
+    </div>
 </header>
+
+<aside id="off-canvas-menu" class="off-canvas-menu">
+    <a href="#" class="close-icon">&times;</a>
+    <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Our courses</a></li>
+        <li><a href="#">Our mentors</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <img src="./img/menu-img.jpg" alt="Decorative Camera" class="off-canvas-image">
+</aside>

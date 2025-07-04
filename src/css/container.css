@@ -86,3 +86,10 @@
     letter-spacing: -0.32px; 
   }
 }
+@media only screen and (max-width:1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+
+}

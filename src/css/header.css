@@ -1,44 +1,268 @@
+:root {
+  --white: white;
+  --hexadecimal: #1d1d1d;
+  --brown: #bea69e;
+  --black: black;
+  --line-color: rgba(255, 255, 255, 0.2);
+  --font: 'DM Sans', sans-serif;
+}
+body {
+  background-color: black;
+  font-family: var(--font);
+  color: var(--white);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/* Header Stilleri */
 .header {
-  padding: 20px 0;
+  padding-top: 10px;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 45px;
+  padding: 0 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line-color);
 }
-.nav-list {
+.logo img {
+  height: 11px;
+}
+.nav-links,
+.main-button {
+  display: none;
+}
+.nav-right {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  gap: 15px;
 }
-.nav-link {
-  position: relative;
-  display: block;
+
+.camera-icon-link {
+  background-color: var(--hexadecimal);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.camera-icon-link:hover {
+  color: var(--icon-hover-color);
+}
+
+.icon-camera {
+  width: 20px;
+  height: 20px;
+}
+.icon-camera:hover {
+  fill: var(--brown);
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 22px;
+  height: 18px;
+}
+.hamburger-menu .icon-Nav {
+  width: 100%; /* Kapsayıcının genişliğini doldur */
+  height: 100%; /* Kapsayıcının yüksekliğini doldur */
+  stroke: var(--white); /* SVG içindeki "currentColor" değerini beyaz yapar */
+}
+
+/* Off-Canvas Menü Stilleri */
+.off-canvas-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 218px;
+  height: 812px;
+  background-color: var(--brown);
+  z-index: 1000;
+  transition: right 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--hexadecimal);
+  overflow: hidden;
+}
+
+.off-canvas-menu:target {
+  right: 0;
+}
+
+.close-icon {
+  font-size: 45px;
+  margin-left: 180px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.off-canvas-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  text-transform: uppercase;
+  padding: 0 20px;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.off-canvas-menu ul a {
+  display: block;
+  padding: 10px 0;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+.off-canvas-menu ul li a:hover {
+  font-weight: bold;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.off-canvas-image {
+  width: 600px;
+
+  margin-top: 175px;
+}
+
+/* Tablet Stilleri */
+@media (min-width: 768px) {
+  .wrap {
+    max-width: 768px;
+  }
+  .header {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .nav {
+    height: 60px;
+    width: 530px;
+  }
+  .logo img {
+    height: 16px;
+  }
+  .nav-right {
+    gap: 40px;
+  }
+
+  .hamburger-menu .icon-Nav {
+    width: 100px;
+    left: 170px;
+    position: relative;
+  }
+
+  .main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: #121212;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 58px;
+    width: 186px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    left: 220px;
+
+    height: 60px;
+    top: -10px;
+  }
+  .camera-icon-link {
+    display: none;
+  }
+  .off-canvas-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 480px;
+    height: 1000px;
+    background-color: var(--brown);
+    z-index: 1000;
+    transition: right 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+    color: var(--hexadecimal);
+    overflow: hidden;
+  }
+  .close-icon {
+    margin-left: 400px;
+    font-size: 60px;
+  }
+  .off-canvas-image {
+    width: 476px;
+    height: auto;
+
+    margin-top: 0;
+  }
+}
+
+/* Masaüstü Stilleri */
+@media (min-width: 1280px) {
+  .wrap {
+    max-width: 1280px;
+  }
+  .header {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .nav {
+    width: 75%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0 5px;
+    gap: 0;
+    position: relative;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+  .nav-links {
+    position: absolute;
+    left: 250px;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .nav-links li a:hover {
+    color: var(--brown);
+  }
+  .nav-right {
+    gap: 40px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .main-button {
+    position: absolute;
+    height: 60px;
+    width: 238px;
+    font-size: 18px;
+    top: -20px;
+    left: 840px;
+  }
 }
