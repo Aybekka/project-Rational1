@@ -7,7 +7,7 @@
 }
 
 .signup {
-  background-color: var(--black);
+  
   border-radius: 10px;
 }
 
@@ -81,15 +81,19 @@ button:hover {
     display: none;
   }
  .wrapper {
-    display: flex;           /* Flex sistemi aktif */
-    justify-content: center; /* YATAY ortalama */
-    align-items: center;     /* DİKEY ortalama */
+     /* DİKEY ortalama */
     height: 100vh;           /* Dikey ortalamak için gerekli */
   }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
+  .wrapper {
+     display: flex;           /* Flex sistemi aktif */
+    justify-content: center; /* YATAY ortalama */
+    align-items: center;
+
+  }
   .images {
     width: 540px;
     display: flex;
@@ -142,7 +146,7 @@ button:hover {
     float: left;
   }
   .wrapper{
-    width: 1080px;
+    width: 1280px;
     margin: 0 auto;
     gap: 60px;
   }
