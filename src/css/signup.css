@@ -33,12 +33,17 @@ p.signup-description {
 }
 .signup-textarea {
   height: 100px;
+  font-family: var(--font);
 }
 .signup-input::placeholder {
   color: var(--white);
+  font-size: 14px;
+  font-family: var(--font);
 }
 .signup-textarea::placeholder {
   color: var(--white);
+  font-size: 14px;
+  font-family: var(--font);
 }
 .signup-button {
   margin-top: 20px;
