@@ -9,8 +9,7 @@
           box-sizing: border-box;
      }
 
-     .review-border,
-     .review-border-amanda {
+     .review-border {
           width: 100%;
           height: 244px;
           color: var(--white);
@@ -109,7 +108,15 @@
          margin:0 auto;  
          margin-top:50px;
      }
-
+ .review-border-amanda{
+          width: 640px;
+          height: 196px;
+          color: var(--white);
+          border: 1px solid var(--brown);
+          border-radius: 16px;
+         margin:0 auto;  
+         margin-top:50px;
+     }
      .reviews-header {
           margin-left: 20px;
           margin-bottom: 40px;
@@ -214,8 +221,8 @@
          
      }
 .review-border-amanda {
-     display:block;
-          width: 530px;
+         display:block;
+          width: 540px;
           height: 216px;
           color: var(--white);
           border: 1px solid var(--brown);
