@@ -1,29 +1,27 @@
 .wrapper {
   display: flex;
-  justify-content: space-between; /* signup en sola, images en sağa */
-  align-items: flex-start; /* üst hizalama */
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
   box-sizing: border-box;
 }
 
 .signup {
-  
   border-radius: 10px;
 }
 
-p.description {
+p.signup-description {
   padding-top: 20px;
   margin-bottom: 25px;
 }
 
-form {
+.signup-form {
   display: flex;
   flex-direction: column;
 }
 
-input[type='text'],
-input[type='email'],
-textarea {
+.signup-input ,
+.signup-textarea {
   background-color: var(--black);
   border: 1px solid #444;
   border-radius: 10px;
@@ -33,17 +31,21 @@ textarea {
   color: var(--white);
   resize: vertical;
 }
-
-input::placeholder,
-textarea::placeholder {
+.signup-textarea {
+  height: 100px;
+  font-family: var(--font);
+}
+.signup-input::placeholder {
   color: var(--white);
+  font-size: 14px;
+  font-family: var(--font);
 }
-
-textarea {
-  min-height: 100px;
+.signup-textarea::placeholder {
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--font);
 }
-
-button {
+.signup-button {
   margin-top: 20px;
   background-color: var(--white);
   color: var(--black);
@@ -56,7 +58,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.signup-button:hover {
   background-color: var(--dark-grey);
   color: var(--brown);
 }
@@ -71,36 +73,41 @@ button:hover {
   color: #bbb;
   text-decoration: underline;
 }
-.images {
+
+.signup-images {
   display: none;
 }
 
-/* Styles for Tablet devices */
+/* Tablet */
 @media only screen and (min-width: 768px) {
-  .images {
+  .signup-images {
     display: none;
   }
- .wrapper {
-     /* DİKEY ortalama */
-    height: 100vh;           /* Dikey ortalamak için gerekli */
+
+  .wrapper {
+    height: 100vh;
   }
 }
 
-/* Styles for Desktop devices */
+/* Desktop */
 @media only screen and (min-width: 1280px) {
   .wrapper {
-     display: flex;           /* Flex sistemi aktif */
-    justify-content: center; /* YATAY ortalama */
+    display: flex;
+    justify-content: center;
     align-items: center;
-
+    width: 1280px;
+    margin: 0 auto;
+    gap: 60px;
   }
-  .images {
+
+  .signup-images {
     width: 540px;
     display: flex;
     gap: 20px;
     box-sizing: border-box;
     align-items: flex-end;
   }
+
   .img1-oval {
     width: 180px;
     height: 288px;
@@ -108,7 +115,7 @@ button:hover {
     border-radius: 1000px;
     position: relative;
     overflow: hidden;
-    top: 0; 
+    top: 0;
   }
 
   .img2-oval {
@@ -132,6 +139,7 @@ button:hover {
     mix-blend-mode: multiply;
     border-radius: 12px;
   }
+
   .img2-oval img {
     position: absolute;
     top: 50%;
@@ -141,13 +149,9 @@ button:hover {
     max-height: 313px;
     border-radius: 12px;
   }
+
   .signup {
     max-width: 480px;
     float: left;
-  }
-  .wrapper{
-    width: 1280px;
-    margin: 0 auto;
-    gap: 60px;
   }
 }
