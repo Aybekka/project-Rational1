@@ -1,25 +1,30 @@
-/* ==========================================================================
-   1. HERO SECTION (Mobile-First)
-   Not: Bu dosya, header.css içindeki temel değişkenleri ve sınıfları kullanır.
-   ========================================================================== */
+/* 1. HERO SECTION (Mobile-First)*/
 
-   .hero-section {
-  
+/* hero.css dosyasında */
+
+
+.hero-section {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 90px;
   padding: 20px 15px;
   border-radius: 20px;
-  background-color: var(--hexadecimal);
   overflow: hidden;
+  
+  /* İçindeki `absolute` pozisyonlu elemanları kontrol edebilmesi için EKLENDİ */
+  position: relative; 
+  
+  z-index: 1; /* Bu, arka planın üzerinde kalmasını sağlar */
+  background-color: var(--hexadecimal);
+  
 }
-
 .hero-section .title {
   width: 295px;
   font-size: 40px;
   line-height: 44px;
   font-weight: 500;
   letter-spacing: -4%;
+  
 }
 
 .title span {
@@ -46,12 +51,13 @@
 
 .content-wrapper {
   display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
+
+  align-items: flex-start;
+  gap: 50px;
+  padding: 20px 0;
   border-radius: 12px;
-  top: 380px;
   position: absolute;
+  top: 300px;
 }
 
 .happy-students-section {
@@ -69,7 +75,7 @@
 .student-profiles {
   display: flex;
   position: relative;
-  width: 100px; /* 3*40px - overlap */
+  width: 100px;
   height: 40px;
   flex-shrink: 0;
 }
@@ -129,15 +135,12 @@
   font-weight: bold;
 }
 
-/* ==========================================================================
-   3. TABLET STİLLERİ (768px ve üzeri)
-   ========================================================================== */
+/* ========== 3. TABLET STİLLERİ (768px ve üzeri) ==========  */
 @media (min-width: 768px) {
-  /* Hero Section */
   .wrap {
-    display: flex;           /* Flex sistemi aktif */
-    justify-content: center; /* YATAY ortalama */
-    align-items: center;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .hero-section {
     width: 100%;
@@ -147,6 +150,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: 1;
   }
   .hero-section .title {
     width: 517px;
@@ -167,7 +171,6 @@
     height: 54px;
     border-radius: 50%;
     border: 2px solid var(--hexadecimal);
-    
   }
   .profile-img.first-img {
     left: 0;
@@ -187,7 +190,6 @@
     display: flex;
     align-items: center;
 
-
     padding: 15px 25px;
     border-radius: 12px;
   }
@@ -199,55 +201,53 @@
     font-size: 16px;
     line-height: 20px;
   }
- .students-text-and-arrow {
-  position: relative;
-  top: 15px;
-  left: 40px;
-  display: flex;              /* Eksikti, eklendi */
-  flex-direction: column;     /* Yazı ve ok alt alta */
-  align-items: flex-start;
-  font-size: 20px;
-               /* OK ve yazı arasındaki boşluk (azaltıldı) */
-  color: var(--white);
-  text-decoration: none;
-}
-.arrow-icon{
-  position: relative;
-  top: -15px;
-}
-  
+  .students-text-and-arrow {
+    position: relative;
+    top: 15px;
+    left: 40px;
+    display: flex; /* Eksikti, eklendi */
+    flex-direction: column; /* Yazı ve ok alt alta */
+    align-items: flex-start;
+    font-size: 20px;
+    /* OK ve yazı arasındaki boşluk (azaltıldı) */
+    color: var(--white);
+    text-decoration: none;
+  }
+  .arrow-icon {
+    position: relative;
+    top: -15px;
+  }
 
   .reviews-section {
     display: flex;
     align-items: center;
     gap: 15px;
     position: relative;
-    left: 150px;
+    left: 120px;
     padding: 15px 25px;
     border-radius: 12px;
   }
-.rectangle {
-  width: 90%;        /* ya da max-width: 393px; */
-  max-width: 393px;
-  margin: 20px auto 0 auto; /* yatay ortalama */
-  position: relative;
-  top: 0;
-}
-
+  .rectangle {
+    width: 90%; /* ya da max-width: 393px; */
+    max-width: 393px;
+    margin: 50px auto 0 auto; /* yatay ortalama */
+    position: relative;
+  }
 
   .content-wrapper {
-    left: 0;
     flex-direction: row;
-   
-    margin-top: 40px;
     justify-content: flex-start;
+    align-items: center;
+
+    right: 30px;
+    top: -550px;
+    position: relative; /* yine absolute değil */
   }
 }
 
-
 @media (min-width: 1280px) {
   /* Hero Section */
-   .wrap{
+  .wrap {
     width: 1080px;
   }
   .hero-section {
@@ -255,7 +255,8 @@
     height: 600px;
     position: relative;
     display: block;
-  } 
+    z-index: 1;
+  }
   .title {
     width: 563px;
     height: 204px;
@@ -267,7 +268,7 @@
   }
 
   .title span {
-    color: var(--brown); 
+    color: var(--brown);
   }
 
   .title-1 {
@@ -275,9 +276,9 @@
     top: 250px;
     left: 50px;
     width: 418px;
+   
   }
 
- 
   .profile-img {
     width: 54px;
     height: 54px;
@@ -343,6 +344,11 @@
   .content-wrapper {
     position: absolute;
     top: 500px;
-    left: 0px;
+    left: 0;
+    right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
   }
 }
+
