@@ -85,7 +85,10 @@ p.signup-description {
   }
 
   .wrapper {
-    height: 100vh;
+    height: 577px;
+  }
+  .signup{
+    margin: 0 auto;
   }
 }
 
@@ -97,7 +100,8 @@ p.signup-description {
     align-items: center;
     width: 1280px;
     margin: 0 auto;
-    gap: 60px;
+    gap: 70px;
+    height: 700px;
   }
 
   .signup-images {

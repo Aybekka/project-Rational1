@@ -1,31 +1,29 @@
-@media (min-width: 320px) and (max-width: 375px) {
+
 
      .amanda-border {
           display: none;
      }
 
      .review-main-box {
-          margin: 0 auto;
+       
           background-color: var(--black);
-          width: 400px;
-          height: 400px;
+         
      }
 
      .review-border {
-          width: 335px;
+          width: 100%;
           height: 244px;
           color: var(--white);
           border: 1px solid var(--brown);
           border-radius: 16px;
-          margin-left: 20px;
-          margin-right: 20px;
-          margin-bottom: 20px;
+         
      }
 
      .reviews-header {
+          margin-top: 100px;
           margin-left: 20px;
           margin-bottom: 40px;
-          font-family: DM Sans;
+           font-family: var(--font-family);
           color: var(--white);
           font-weight: 500;
           font-size: 28px;
@@ -90,9 +88,9 @@
 
      }
 
-}
 
-@media (min-width: 376px) and (max-width: 768px) {
+
+@media only screen and (min-width: 768px) {
 
      .amanda-border {
           display: none;
@@ -102,8 +100,9 @@
           margin: 0 auto;
           margin-bottom: 100px;
           background-color: var(--black);
-          width: 704px;
+          width: 768px;
           height: 300px;
+          
      }
 
      .review-cover {
@@ -124,7 +123,7 @@
      .reviews-header {
           margin-left: 0px;
           margin-bottom: 40px;
-          --font-family: "DM Sans", sans-serif;
+        font-family: var(--font-family);
           font-weight: 500;
           font-size: 48px;
           line-height: 54px;
@@ -153,7 +152,7 @@
      }
 
      .name-review {
-          font-family: DM Sans;
+          font-family: var(--font-family);
           font-weight: 500;
           font-size: 20px;
           line-height: 24px;
@@ -186,7 +185,7 @@
           width: 86px;
           height: 16px;
           text-align: center;
-          font-family: DM Sans;
+          font-family: var(--font-family);
           font-weight: 400;
           font-size: 14px;
           line-height: 18px;
@@ -196,30 +195,31 @@
 
 }
 
-@media (min-width: 769px) {
-
+@media only screen and (min-width: 1280px) {
+.amanda-border {
+          display: block;
+     }
      .review-cover {
           margin-left: 0px;
 
           display: flex;
           flex-direction: row;
           align-items: center;
-          gap: 40px;
-          padding-left: 20px;
+      
      }
 
      .review-main-box {
 
           margin: 0 auto;
           background-color: var(--black);
-          width: 1240px;
+          width: 1080px;
           height: 300px;
-          margin-left: 10px;
+          
           margin-bottom: 150px;
      }
 
      .review-border {
-          width: 530px;
+          width: 540px;
           height: 216px;
           color: var(--white);
           border: 1px solid var(--brown);
@@ -228,9 +228,9 @@
      }
 
      .reviews-header {
-          margin-left: 20px;
+          
           margin-bottom: 40px;
-          --font-family: "DM Sans", sans-serif;
+          font-family: var(--font-family);
           font-weight: 500;
           font-size: 48px;
           line-height: 54px;
@@ -259,7 +259,7 @@
      }
 
      .name-review {
-          font-family: DM Sans;
+          font-family: var(--font-family);
           font-weight: 500;
           font-size: 20px;
           line-height: 24px;
@@ -292,7 +292,7 @@
           width: 86px;
           height: 16px;
           text-align: center;
-          font-family: DM Sans;
+           font-family: var(--font-family);
           font-weight: 400;
           font-size: 14px;
           line-height: 18px;
