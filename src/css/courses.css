@@ -12,8 +12,6 @@ ol {
     fill: var(--brown);
 }
 
-
-
 .oc-md {
 display: block;
 border: 1px solid var(--black);
@@ -252,7 +250,7 @@ display: inline-block;
     margin: 0 auto;
 }
 .oc-md {
-
+max-width: 1080px;
 display: inline-flex;
 justify-content: left;
 flex-direction: row;
