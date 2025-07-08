@@ -156,7 +156,8 @@ display: inline-flex;
 
     
     .our-section-container {
-    max-width: 768px;
+    
+    width: 768px;
     justify-content: start;
     align-items: center;
     margin: 0 auto;
@@ -244,7 +245,7 @@ display: inline-block;
 
 @media (min-width:1280px){
     .our-section-container {
-    max-width: 1080px;
+    width: 1080px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
