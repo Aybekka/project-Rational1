@@ -12,8 +12,6 @@ ol {
     fill: var(--brown);
 }
 
-
-
 .oc-md {
 display: block;
 border: 1px solid var(--black);
@@ -42,6 +40,7 @@ display: inline-flex;
 }
 .oc-card-div {
     max-width: 375px;
+    background: linear-gradient(var(--main-gradient));
 }
 .oc-card-head {
     padding-bottom: 100px;
@@ -204,12 +203,13 @@ display: inline-block;
 
 }
 
-.oc-card {
-    border: 1px solid #FFFFFF33;
-    border-radius: 3%;
-    width: 290px;
-    flex-basis: calc((100% - 10px) / 2);;
-    
+ .oc-card{
+        border: 1px solid #FFFFFF33;
+        border-radius: 3%;
+        height:452px;
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        box-sizing: border-box;
 }
 .oc-card-num {
     display: flex;
@@ -250,13 +250,17 @@ display: inline-block;
     margin: 0 auto;
 }
 .oc-md {
-
+max-width: 1080px;
 display: inline-flex;
 justify-content: left;
 flex-direction: row;
 gap: 250px;
 border: 1px solid var(--black);
 
+
+}
+.oc-d1, .oc-d2 {
+display: inline-block;
 
 }
 
@@ -267,10 +271,7 @@ border: 1px solid var(--black);
     margin-left: 0;
 
 }
-.oc-d2 {
-   display: inline-flex;
- 
-}
+
 
 .oc-card-div {
     max-width: 1081px;
