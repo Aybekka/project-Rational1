@@ -30,6 +30,9 @@
 
 @media (min-width:375px) {
 
+    .about-us-section {
+            width: 375px;
+        }
     .aboutus-image {
         width: 335px;
         height: 209px;
@@ -38,6 +41,9 @@
 
 @media (min-width:768px) {
 
+    .about-us-section{
+        width: 768px;
+    }
     .aboutus-image {
         width: 704px;
         height: 340px;

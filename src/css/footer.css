@@ -8,7 +8,7 @@
    Melis----->Ders videolarında ../ yapısını kullanabileceğimz söylenmişti. Görselin relative path kopyalanıp yapıştırıldığında bir sonuç elde edemiyorum. Şu an bg bende çalışıyor eğer farklı şekilde referans verebileceğim bir yol biliyorsanız benimle paylaşırsanız sevinirim.  */
 
 footer {
-  background-image: url(..\img\icomoon\PNG\footer.png);
+  background-image: url(../img/icomoon/PNG/footer.png);
   background-size: contain;
 
   background-color: var(--black);

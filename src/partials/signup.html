@@ -1,21 +1,33 @@
 <div class="container wrapper">
   <div class="signup">
     <h3>Sign <strong style="color: var(--brown)">Up</strong></h3>
-    <p class="description">
+    <p class="signup-description">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
-    <form>
-      <input
+    <form class="signup-form">
+      <form class="signup-form">
+  <input
     type="text"
     placeholder="Enter your name"
+    class="signup-input name-input"
     required
     pattern="[A-Za-z\s]+"
     title="Only letters and spaces are allowed"
   />
-      <input type="email" placeholder="Enter your email" required />
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">SEND</button>
+  <input
+    type="email"
+    placeholder="Enter your email"
+    class="signup-input email-input"
+    required
+  />
+  <textarea
+    placeholder="Message"
+    class="signup-textarea"
+    required
+  ></textarea>
+  <button type="submit" class="signup-button">SEND</button>
+</form>
     </form>
     <p class="privacy-text">
       By clicking on “Send” button, you agree to our
@@ -23,7 +35,7 @@
       for marketing purposes.
     </p>
   </div>
-<div class="images">
+<div class="signup-images">
     <div class="img1-oval">
       <img src="img/sign-up-img1.jpg" alt="Lens" />
     </div>

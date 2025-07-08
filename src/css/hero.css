@@ -1,0 +1,354 @@
+/* 1. HERO SECTION (Mobile-First)*/
+
+/* hero.css dosyasında */
+
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  padding: 20px 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  /* İçindeki `absolute` pozisyonlu elemanları kontrol edebilmesi için EKLENDİ */
+  position: relative; 
+  
+  z-index: 1; /* Bu, arka planın üzerinde kalmasını sağlar */
+  background-color: var(--hexadecimal);
+  
+}
+.hero-section .title {
+  width: 295px;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 500;
+  letter-spacing: -4%;
+  
+}
+
+.title span {
+  color: var(--brown);
+  font-style: italic;
+}
+
+.title-1 {
+  width: 295px;
+  height: 72px;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+.rectangle {
+  position: relative;
+  margin: 20px 0;
+  top: 100px;
+}
+.rectangle img {
+  border-radius: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+
+  align-items: flex-start;
+  gap: 50px;
+  padding: 20px 0;
+  border-radius: 12px;
+  position: absolute;
+  top: 300px;
+}
+
+.happy-students-section {
+  width: 89px;
+}
+.reviews-section {
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+}
+
+.student-profiles {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--hexadecimal);
+  position: absolute;
+}
+.profile-img.first-img {
+  left: 0;
+  z-index: 3;
+}
+.profile-img.second-img {
+  left: 25px;
+  z-index: 2;
+}
+.profile-img.third-img {
+  left: 50px;
+  z-index: 1;
+}
+
+.students-text-and-arrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.star-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.icon-star {
+  width: 25px;
+  height: 25px;
+  stroke: var(--hexadecimal);
+}
+
+.reviews-text {
+  text-align: left;
+}
+.reviews-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.reviews-count {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ========== 3. TABLET STİLLERİ (768px ve üzeri) ==========  */
+@media (min-width: 768px) {
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-section {
+    width: 100%;
+    height: 900px;
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  .hero-section .title {
+    width: 517px;
+    height: 192px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 1.1;
+  }
+  .title-1 {
+    width: 60%;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .profile-img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid var(--hexadecimal);
+  }
+  .profile-img.first-img {
+    left: 0;
+    z-index: 3;
+  }
+
+  .profile-img.second-img {
+    left: 40px;
+    z-index: 2;
+  }
+
+  .profile-img.third-img {
+    left: 80px;
+    z-index: 1;
+  }
+  .happy-students-section {
+    display: flex;
+    align-items: center;
+
+    padding: 15px 25px;
+    border-radius: 12px;
+  }
+
+  .students-title {
+    width: 82px;
+    height: 50px;
+    letter-spacing: -4%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .students-text-and-arrow {
+    position: relative;
+    top: 15px;
+    left: 40px;
+    display: flex; /* Eksikti, eklendi */
+    flex-direction: column; /* Yazı ve ok alt alta */
+    align-items: flex-start;
+    font-size: 20px;
+    /* OK ve yazı arasındaki boşluk (azaltıldı) */
+    color: var(--white);
+    text-decoration: none;
+  }
+  .arrow-icon {
+    position: relative;
+    top: -15px;
+  }
+
+  .reviews-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    left: 120px;
+    padding: 15px 25px;
+    border-radius: 12px;
+  }
+  .rectangle {
+    width: 90%; /* ya da max-width: 393px; */
+    max-width: 393px;
+    margin: 50px auto 0 auto; /* yatay ortalama */
+    position: relative;
+  }
+
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    right: 30px;
+    top: -550px;
+    position: relative; /* yine absolute değil */
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Hero Section */
+  .wrap {
+    width: 1080px;
+  }
+  .hero-section {
+    width: 1080px;
+    height: 600px;
+    position: relative;
+    display: block;
+    z-index: 1;
+  }
+  .title {
+    width: 563px;
+    height: 204px;
+    font-size: 64px;
+    font-weight: 500;
+    color: white;
+    line-height: 68px;
+    text-align: center;
+  }
+
+  .title span {
+    color: var(--brown);
+  }
+
+  .title-1 {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 418px;
+   
+  }
+
+  .profile-img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid var(--hexadecimal);
+    position: absolute;
+  }
+  .profile-img.first-img {
+    left: 0;
+    z-index: 3;
+  }
+
+  .profile-img.second-img {
+    left: 40px;
+    z-index: 2;
+  }
+
+  .profile-img.third-img {
+    left: 80px;
+    z-index: 1;
+  }
+  .happy-students-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 25px;
+    border-radius: 12px;
+  }
+
+  .students-title {
+    width: 82px;
+    height: 50px;
+    letter-spacing: -4%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .students-text-and-arrow {
+    position: relative;
+    left: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  .reviews-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    left: 150px;
+    padding: 15px 25px;
+    border-radius: 12px;
+  }
+  .rectangle {
+    position: absolute;
+    top: 170px;
+    left: auto;
+    right: 50px;
+    width: 393px;
+    margin: 0;
+  }
+  .content-wrapper {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
