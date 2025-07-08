@@ -7,9 +7,10 @@
   --font: 'DM Sans', sans-serif;
 }
 body {
-  background-color: black;
   font-family: var(--font);
   color: var(--white);
+  
+ 
 }
 img {
   display: block;
@@ -25,10 +26,9 @@ ul {
 }
 
 /* Header Stilleri */
-.header {
-  padding-top: 10px;
-}
+
 .nav {
+  background-color: var(--black);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,9 +36,11 @@ ul {
   padding: 0 10px;
   border-radius: 12px;
   border: 1px solid var(--line-color);
+  z-index: 1;
 }
 .logo img {
   height: 11px;
+  margin-top: 22px;
 }
 .nav-links,
 .main-button {
@@ -49,6 +51,7 @@ ul {
   align-items: center;
   gap: 15px;
 }
+
 
 .camera-icon-link {
   background-color: var(--hexadecimal);
@@ -183,7 +186,12 @@ ul {
     left: 220px;
 
     height: 60px;
-    top: -10px;
+    top: 0px;
+  }
+  .main-button:hover {
+    background-color: var(--hexadecimal);
+    color: var(--brown);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   .camera-icon-link {
     display: none;
@@ -221,11 +229,11 @@ ul {
     max-width: 1280px;
   }
   .header {
-    width: 100%;
+    width: 1080px;
     padding-top: 20px;
   }
   .nav {
-    width: 75%;
+    width: 810px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -237,7 +245,7 @@ ul {
   }
 
   .logo {
-    margin-right: auto;
+    margin-left: 20px;
   }
   .nav-links {
     position: absolute;
@@ -262,7 +270,9 @@ ul {
     height: 60px;
     width: 238px;
     font-size: 18px;
-    top: -20px;
-    left: 840px;
+    top: 0px;
+    left: 845px;
   }
 }
+
+
