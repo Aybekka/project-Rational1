@@ -1,5 +1,5 @@
 .footer-container {
-  background-image: url(../img/footer\ back..png);
+  background-image: url(../img/footer-back.png);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -208,14 +208,11 @@ input::placeholder {
     gap: 20px;
   }
 
-  .policy p,
-  .rights .line {
-    text-align: left;
-  }
+ .policy{
+  position: relative;
+right: 50px; 
+}
 
-  .rights {
-    align-items: flex-end;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -268,10 +265,11 @@ input::placeholder {
 
   .policy {
     position: relative;
-    right: 100px;
+    right: 260px;
   }
 
   .line {
     position: relative;
+    left:150px;
   }
 }
