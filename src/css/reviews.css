@@ -286,9 +286,10 @@
           font-size: 16px;
           line-height: 20px;
           letter-spacing: -2%;
+          
 
      }
-
+     
      .review-star {
           position: absolute;
           left: 390px;
