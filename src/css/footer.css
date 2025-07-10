@@ -1,0 +1,202 @@
+footer {
+  background-image: url(../img/icomoon/PNG/footer.png);
+  background-size: contain;
+
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 80px;
+}
+
+.footer-section {
+  margin: 40px auto 20px auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.part-one {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.adres {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  width: max-content;
+  margin-top: 16px;
+}
+
+.adres .telefon-numarasi,
+.adres span {
+  font-size: 14px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.part-two {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 75px;
+}
+
+.social-media-part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.page-sections-part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.subscription-input {
+  border-radius: 12px;
+  width: 267px;
+  height: 60px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--black);
+  padding: 0;
+}
+
+.subscription-input::placeholder {
+  font-size: 16px;
+  color: #121212;
+  opacity: 0.7;
+  padding: 20px 18px;
+}
+
+.subscription-button {
+  background-color: var(--dark-grey);
+  border: 1px solid var(--dark-grey);
+  color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 60px;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.part-four {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.line {
+  display: flex;
+  width: max-content;
+  text-align: left;
+}
+
+@media (min-resolution: 2x) {
+  .footer {
+    background-image: url(./src/img/footer-bg@x2.png);
+  }
+}
+
+/* TABLET MEDIA */
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-top: 100px;
+  }
+
+  .footer-section {
+    margin: 50px auto 25px auto;
+    width: 736px;
+  }
+
+  .info {
+    flex-direction: row;
+  }
+
+  .part-one {
+    margin-bottom: 115px;
+  }
+
+  .adres {
+    width: 152px;
+    margin-top: 25px;
+  }
+
+  .part-two {
+    gap: 25px;
+  }
+
+  .subscription-input {
+    width: 178px;
+  }
+}
+
+/* DESKTOP MEDIA */
+@media only screen and (min-width: 1280px) {
+  .footer {
+    margin-top: 150px;
+  }
+  .footer-section {
+    margin: 50px auto 25px auto;
+    width: 1080px;
+  }
+
+  .info {
+    flex-direction: row;
+  }
+
+  .part-one {
+    margin-bottom: 133px;
+  }
+
+  .adres {
+    width: max-content;
+    margin-top: 25px;
+  }
+
+  .part-two {
+    gap: 50px;
+  }
+
+  .subscription {
+    gap: 16px;
+  }
+
+  .subscription-input {
+    width: 216px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-section {
+    margin: 50px auto 25px auto;
+    width: 1080px;
+  }
+}
