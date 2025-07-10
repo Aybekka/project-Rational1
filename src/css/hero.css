@@ -1,8 +1,5 @@
 /* 1. HERO SECTION (Mobile-First)*/
 
-/* hero.css dosyasında */
-
-
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -10,13 +7,11 @@
   padding: 20px 15px;
   border-radius: 20px;
   overflow: hidden;
-  
-  /* İçindeki `absolute` pozisyonlu elemanları kontrol edebilmesi için EKLENDİ */
-  position: relative; 
-  
-  z-index: 1; /* Bu, arka planın üzerinde kalmasını sağlar */
+
+  position: relative;
+
+  z-index: 1;
   background-color: var(--hexadecimal);
-  
 }
 .hero-section .title {
   width: 295px;
@@ -24,7 +19,6 @@
   line-height: 44px;
   font-weight: 500;
   letter-spacing: -4%;
-  
 }
 
 .title span {
@@ -204,12 +198,11 @@
   .students-text-and-arrow {
     position: relative;
     top: 15px;
-    left: 40px;
-    display: flex; /* Eksikti, eklendi */
-    flex-direction: column; /* Yazı ve ok alt alta */
+    left: 60px;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     font-size: 20px;
-    /* OK ve yazı arasındaki boşluk (azaltıldı) */
     color: var(--white);
     text-decoration: none;
   }
@@ -228,9 +221,9 @@
     border-radius: 12px;
   }
   .rectangle {
-    width: 90%; /* ya da max-width: 393px; */
+    width: 90%;
     max-width: 393px;
-    margin: 50px auto 0 auto; /* yatay ortalama */
+    margin: 50px auto 0 auto;
     position: relative;
   }
 
@@ -241,7 +234,7 @@
 
     right: 30px;
     top: -550px;
-    position: relative; /* yine absolute değil */
+    position: relative;
   }
 }
 
@@ -276,7 +269,6 @@
     top: 250px;
     left: 50px;
     width: 418px;
-   
   }
 
   .profile-img {
@@ -351,4 +343,3 @@
     gap: 40px;
   }
 }
-

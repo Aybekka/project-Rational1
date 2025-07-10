@@ -1,5 +1,5 @@
 .hero-area-background {
-  background-image: url('../img/Graphic.png');
+  background-image: url('../img/Graphic1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -8,29 +8,26 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 940px; /* Ekran yüksekliği kadar olsun */
+  height: 940px;
   filter: contrast(120%) brightness(110%) saturate(120%);
   z-index: -1;
+  filter: brightness(5);
 }
 
 @media (min-width: 320px) {
-  .hero-area-background{
+  .hero-area-background {
     height: 940px;
   }
 }
 
 @media (min-width: 768px) {
-  .hero-area-background{
+  .hero-area-background {
     height: 1230px;
   }
 }
 
 @media (min-width: 1280px) {
-  .hero-area-background{
+  .hero-area-background {
     height: 930px;
   }
 }
-
-
-
-
