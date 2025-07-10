@@ -10,6 +10,7 @@ height: 72px;
  
   display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 .scrolling-block__content {
  
