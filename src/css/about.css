@@ -1,7 +1,6 @@
 .about-us-section {
     display: flex;
     flex-direction: column;
-    margin-left: 0;
     justify-content: flex-start;
 }
 
