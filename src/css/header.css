@@ -9,8 +9,6 @@
 body {
   font-family: var(--font);
   color: var(--white);
-  
- 
 }
 img {
   display: block;
@@ -40,7 +38,6 @@ ul {
 }
 .logo img {
   height: 11px;
-  
 }
 .nav-links,
 .main-button {
@@ -52,7 +49,6 @@ ul {
   gap: 15px;
 }
 
-
 .camera-icon-link {
   background-color: var(--hexadecimal);
   width: 32px;
@@ -61,35 +57,31 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--icon-color);
-  transition: all 0.2s ease-in-out;
+  color: rgba(190, 166, 158, 0.5);
+  transition: all 0.5s ease-in-out;
 }
 
 .camera-icon-link:hover {
-  color: var(--icon-hover-color);
+  color: rgba(190, 166, 158, 1);
 }
-
 .icon-camera {
   width: 20px;
   height: 20px;
 }
-.icon-camera:hover {
-  fill: var(--brown);
-}
+
 .hamburger-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 22px;
-  height: 18px;
+  width: 32px;
+  height: 22px;
 }
 .hamburger-menu .icon-Nav {
-  width: 100%; /* Kapsayıcının genişliğini doldur */
-  height: 100%; /* Kapsayıcının yüksekliğini doldur */
-  stroke: var(--white); /* SVG içindeki "currentColor" değerini beyaz yapar */
+  width: 100%;
+  height: 100%;
+  stroke: var(--white);
 }
 
-/* Off-Canvas Menü Stilleri */
 .off-canvas-menu {
   position: fixed;
   top: 0;
@@ -161,7 +153,9 @@ ul {
   .nav-right {
     gap: 40px;
   }
-
+.hamburger-menu{
+height: 28px;
+}
   .hamburger-menu .icon-Nav {
     width: 100px;
     left: 170px;
@@ -201,7 +195,7 @@ ul {
     top: 0;
     right: -100%;
     width: 480px;
-    height: 1000px;
+    height: 1160px;
     background-color: var(--brown);
     z-index: 1000;
     transition: right 0.4s ease-in-out;
@@ -219,7 +213,7 @@ ul {
     width: 476px;
     height: auto;
 
-    margin-top: 0;
+    margin-top: 50px;
   }
 }
 
@@ -274,5 +268,3 @@ ul {
     left: 845px;
   }
 }
-
-
