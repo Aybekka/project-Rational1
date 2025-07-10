@@ -11,7 +11,9 @@ ol {
 .arrow-icon:hover {
     fill: var(--brown);
 }
-
+.oc-span {
+    color: var(--brown);
+}
 .oc-md {
 display: block;
 border: 1px solid var(--black);
@@ -84,6 +86,8 @@ display: inline-flex;
 
 }
 .oc-d1 {
+    display: inline-flex;
+    gap: 10px;
     font-size: 28px;
     font-weight: 500;
     line-height: 32px;
