@@ -44,6 +44,7 @@
 
     .about-us-section{
         width: 768px;
+        margin: 0 auto;
     }
     .aboutus-image {
         width: 704px;
@@ -54,6 +55,7 @@
 @media (min-width:1280px) {
 
     .about-us-section{
+        margin: 0 auto;
         width: 1080px;
     }
     .aboutus-image {
