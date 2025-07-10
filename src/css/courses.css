@@ -85,6 +85,8 @@ display: inline-flex;
 
 }
 .oc-d1 {
+    gap: 5px;
+    display: inline-flex;
     font-size: 28px;
     font-weight: 500;
     line-height: 32px;
