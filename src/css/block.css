@@ -2,7 +2,7 @@
 .scrolling-block {
   width: 100%;
   overflow: hidden;
-height: 72px;
+  height: 72px;
   margin-top: 70px;
   background-color: black;
   border-top: 1px solid var(--line-color);
@@ -10,7 +10,7 @@ height: 72px;
  
   display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .scrolling-block__content {
  
