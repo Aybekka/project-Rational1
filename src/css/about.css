@@ -1,7 +1,8 @@
 .about-us-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 0;
+    justify-content: flex-start;
 }
 
 .aboutus-photo-p-block {
