@@ -5,6 +5,7 @@
 }
 
 .aboutus-photo-p-block {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

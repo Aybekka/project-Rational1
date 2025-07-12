@@ -1,3 +1,4 @@
+<!-- SVG Sembolleri (sayfanın başında tanımlanmalı) -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
   <symbol id="icon-Nav" viewBox="0 0 46 32">
     <path
@@ -5,38 +6,42 @@
       stroke="currentColor"
       stroke-linejoin="miter"
       stroke-linecap="round"
-      stroke-miterlimit="4"
       stroke-width="4"
       d="M9.671 5.074h40.329"
-    ></path>
+    />
     <path
       fill="none"
       stroke="currentColor"
       stroke-linejoin="miter"
       stroke-linecap="round"
-      stroke-miterlimit="4"
       stroke-width="4"
       d="M8.671 24.468h40.329"
-    ></path>
+    />
     <path
       fill="none"
       stroke="currentColor"
       stroke-linejoin="miter"
       stroke-linecap="round"
-      stroke-miterlimit="4"
       stroke-width="4"
       d="M19.602 14.771h30.398"
-    ></path>
+    />
   </symbol>
 </svg>
 
+<!-- HEADER -->
 <header class="container wrap">
   <div class="header" id="header_section">
     <nav class="nav">
-      <a class="logo" href="#">
-        <img src="./img/Focus.Frame.png" alt="Focus.Frame Logo" />
+      <!-- Logo -->
+      <a class="logo" href="#top">
+        <img
+          src="./img/Focus.Frame.png"
+          alt="Focus.Frame Logo"
+          decoding="async"
+        />
       </a>
 
+      <!-- Menü bağlantıları -->
       <ul class="nav-links">
         <li><a href="#about_us">About us</a></li>
         <li><a href="#our_courses">Our courses</a></li>
@@ -45,14 +50,19 @@
         <li><a href="#footerr">Contacts</a></li>
       </ul>
 
+      <!-- Sağ taraf: ikonlar ve buton -->
       <div class="nav-right">
-        <a href="#" class="camera-icon-link">
+        <a href="#" class="camera-icon-link" aria-label="Go to gallery">
           <svg class="icon icon-camera">
-            <use xlink:href="#icon-camera"></use>
+            <use href="./img/symbol-defs.svg#icon-camera"></use>
           </svg>
         </a>
-        <a class="hamburger-menu" href="#off-canvas-menu">
-          <svg class="icon icon-Nav"><use xlink:href="#icon-Nav"></use></svg>
+        <a
+          class="hamburger-menu"
+          href="#off-canvas-menu"
+          aria-label="Open menu"
+        >
+          <svg class="icon icon-Nav"><use href="#icon-Nav"></use></svg>
         </a>
         <button type="button" class="main-button">SIGN UP</button>
       </div>
@@ -60,8 +70,9 @@
   </div>
 </header>
 
+<!-- OFF-CANVAS MENU -->
 <aside id="off-canvas-menu" class="off-canvas-menu">
-  <a href="#" class="close-icon">&times;</a>
+  <a href="#top" class="close-icon" aria-label="Close menu">&times;</a>
   <ul>
     <li><a href="#about_us">About us</a></li>
     <li><a href="#our_courses">Our courses</a></li>
@@ -73,15 +84,6 @@
     src="./img/menu-img.jpg"
     alt="Decorative Camera"
     class="off-canvas-image"
+    decoding="async"
   />
 </aside>
-
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-  <symbol id="icon-camera" viewBox="0 0 43 32">
-    <path
-      fill="currentColor"
-      opacity="0.4"
-      d="M5.333 5.333c-1.414 0-2.771 0.562-3.771 1.562s-1.562 2.357-1.562 3.771v16c0 1.414 0.562 2.771 1.562 3.771s2.357 1.562 3.771 1.562h32c1.414 0 2.771-0.562 3.771-1.562s1.562-2.357 1.562-3.771v-16c0-1.414-0.562-2.771-1.562-3.771s-2.357-1.562-3.771-1.562h-3.125c-1.414-0-2.771-0.562-3.771-1.563l-2.208-2.208c-1-1-2.356-1.562-3.771-1.563h-6.251c-1.414 0-2.771 0.562-3.771 1.563l-2.208 2.208c-1 1-2.356 1.562-3.771 1.563h-3.125zM6.667 10.667c-0.354 0-0.693-0.14-0.943-0.391s-0.391-0.589-0.391-0.943c0-0.354 0.14-0.693 0.391-0.943s0.589-0.391 0.943-0.391c0.354 0 0.693 0.14 0.943 0.391s0.391 0.589 0.391 0.943c0 0.354-0.14 0.693-0.391 0.943s-0.589 0.391-0.943 0.391zM30.667 17.333c0 2.475-0.983 4.849-2.734 6.6s-4.124 2.734-6.6 2.734c-2.475 0-4.849-0.983-6.6-2.734s-2.734-4.124-2.734-6.6c0-2.475 0.983-4.849 2.734-6.6s4.124-2.734 6.6-2.734c2.475 0 4.849 0.983 6.6 2.734s2.734 4.124 2.734 6.6z"
-    ></path>
-  </symbol>
-</svg>

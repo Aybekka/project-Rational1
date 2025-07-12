@@ -13,9 +13,9 @@ ol {
 }
 
 .oc-md {
+    padding-top:50px;
 display: block;
 border: 1px solid var(--black);
-margin: 50px 10px 50px 10px;
 
 }
 
@@ -38,9 +38,11 @@ display: inline-flex;
     letter-spacing: -2%;
    
 }
+.oc-card{
+    background:var(--main-gradient);
+}
 .oc-card-div {
     max-width: 375px;
-    background: linear-gradient(var(--main-gradient));
 }
 .oc-card-head {
     padding-bottom: 100px;
@@ -66,7 +68,7 @@ display: inline-flex;
 
 
 .our-section-container {
-    
+    padding-top: 0px;
     justify-content: start;
     align-items: center;
     margin: 0 auto;
@@ -75,7 +77,6 @@ display: inline-flex;
 max-width: 375px;
 display: block;
 border: 1px solid var(--black);
-margin: 50px 10px 50px 10px;
 
 }
 
@@ -84,6 +85,8 @@ display: inline-flex;
 
 }
 .oc-d1 {
+    gap: 5px;
+    display: inline-flex;
     font-size: 28px;
     font-weight: 500;
     line-height: 32px;
@@ -94,6 +97,7 @@ display: inline-flex;
 
 }
 .oc-d2 {
+    padding-left: 16px;;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -168,7 +172,6 @@ display: inline-flex;
 flex-direction: row;
 gap: 100px;
 border: 1px solid var(--black);
-margin: 100px 20px 50px 20px;
 }
 
 .oc-d1, .oc-d2 {
@@ -245,6 +248,7 @@ display: inline-block;
 
 @media (min-width:1280px){
     .our-section-container {
+        padding-top: 50px;
     width: 1080px;
     justify-content: space-between;
     align-items: center;
