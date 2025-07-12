@@ -1,63 +1,71 @@
 <main>
+  <!-- Sayfa içeriklerini saran ana container -->
   <div class="container wrap">
+    <!-- Ana tanıtım (hero) bölümü -->
     <section class="hero-section" id="hero">
+      <!-- Başlık -->
       <h1 class="title">
         Discover the magic of
         <span>photography</span> in our school
       </h1>
 
+      <!-- Alt başlık / açıklayıcı metin -->
       <p class="title-1">
         Our photography school offers an unforgettable journey, where you can
         learn the basics of composition, master technical skills, translate your
         unique ideas.
       </p>
 
+      <!-- Hero görsel kutusu -->
       <div class="rectangle">
-        <img src="./img/hero-img.png" alt="Photographer holding a camera" />
+        <img
+          src="./img/hero-img.png"
+          alt="Photographer holding a camera in studio"
+        />
       </div>
 
+      <!-- Öğrenci ve yorum bölümlerini saran yapı -->
       <div class="content-wrapper">
+        <!-- Mutlu öğrenciler bölümü -->
         <div class="happy-students-section">
+          <!-- Öğrenci profil fotoğrafları -->
           <div class="student-profiles">
             <img
               src="./img/girl 1.png"
-              alt="Student 1"
+              alt="Smiling student girl"
               class="profile-img first-img"
             />
             <img
               src="./img/boy.png"
-              alt="Student 2"
+              alt="Happy student boy"
               class="profile-img second-img"
             />
             <img
               src="./img/girl.png"
-              alt="Student 3"
+              alt="Confident student girl"
               class="profile-img third-img"
             />
           </div>
+
+          <!-- Öğrenci yorumlarına giden bağlantı -->
           <a href="#reviews" class="students-text-and-arrow">
             <p class="students-title">Our happy students</p>
             <span class="arrow-icon">&#8594;</span>
+            <!-- Sağ ok simgesi -->
           </a>
         </div>
 
+        <!-- Değerlendirme (reviews) bölümü -->
         <div class="reviews-section">
+          <!-- Yıldız ikon kutusu -->
           <div class="star-icon-container">
-            <svg
-              class="icon-star"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              ></polygon>
+            <!-- icon-star artık sembolden çağrılıyor -->
+            <svg class="icon-star">
+              <use href="./img/symbol-defs.svg#icon-star"></use>
             </svg>
           </div>
+
+          <!-- Yorum bilgisi -->
           <div class="reviews-text">
             <p class="reviews-label">Reviews</p>
             <p class="reviews-count">+1500</p>
