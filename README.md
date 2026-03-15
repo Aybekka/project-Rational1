@@ -28,7 +28,7 @@ Bu projeyi geliştirirken şunları pekiştirdim:
 
 **-** CSS Flexbox ile karmaşık düzenlerin yönetilmesi.
 
-**-**Resimlerin ve metinlerin farklı çözünürlüklerde doğru ölçeklenmesi.
+**-** Resimlerin ve metinlerin farklı çözünürlüklerde doğru ölçeklenmesi.
 
-**-**GitHub Pages ile projelerin yayına alınması süreci.
+**-** GitHub Pages ile projelerin yayına alınması süreci.
 
