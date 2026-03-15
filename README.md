@@ -21,4 +21,14 @@ Projenin yayındaki halini buradan inceleyebilirsiniz:
 **Hover Efektleri:** Kullanıcı etkileşimini artıran yumuşak animasyonlar.
 
 **Temiz Klasör Yapısı:** Stil dosyaları ve görsellerin düzenli organizasyonu.
+## 🎯 Öğrenim Kazanımları
+Bu projeyi geliştirirken şunları pekiştirdim:
+
+**-**Semantik HTML etiketlerinin doğru kullanımı.
+
+**-**CSS Flexbox ile karmaşık düzenlerin yönetilmesi.
+
+**-**Resimlerin ve metinlerin farklı çözünürlüklerde doğru ölçeklenmesi.
+
+**-**GitHub Pages ile projelerin yayına alınması süreci.
 
