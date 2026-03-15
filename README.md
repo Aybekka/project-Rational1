@@ -24,9 +24,9 @@ Projenin yayındaki halini buradan inceleyebilirsiniz:
 ## 🎯 Öğrenim Kazanımları
 Bu projeyi geliştirirken şunları pekiştirdim:
 
-**-**Semantik HTML etiketlerinin doğru kullanımı.
+**-** Semantik HTML etiketlerinin doğru kullanımı.
 
-**-**CSS Flexbox ile karmaşık düzenlerin yönetilmesi.
+**-** CSS Flexbox ile karmaşık düzenlerin yönetilmesi.
 
 **-**Resimlerin ve metinlerin farklı çözünürlüklerde doğru ölçeklenmesi.
 
